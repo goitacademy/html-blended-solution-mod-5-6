@@ -5,14 +5,152 @@
   background-color: #1b414b;
 }
 
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: start;
+  row-gap: 80px;
+  column-gap: 24px;
+  margin-bottom: 40px;
+}
+
+.footer-logo {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.03em;
+}
+
+.footer-nav-list {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.footer-nav-link {
+  display: block;
+  min-width: 66px;
+  padding: 15px 12px;
+  border-radius: 8px;
+
+  font-size: 9px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: rgba(251, 251, 251, 0.3);
+
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
+}
+
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+  color: #1b414b;
+  background-color: #fbfbfb;
+}
+
+.footer-social-list {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  justify-content: center;
+
+  align-items: center;
+}
+
+.footer-social-link {
+  color: #fbfbfb;
+
+  transition: color 250ms ease-in-out;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  color: rgba(251, 251, 251, 0.8);
+}
+
+.footer-social-icon {
+  display: block;
+  fill: currentColor;
+}
+
+.footer-text {
+  max-width: 279px;
+  margin: 0 auto 82px;
+
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+.footer-bottom {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-copyright,
+.footer-privacy {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: #b4b7ba;
+
+  transition: color 250ms ease-in-out;
+}
+
+.footer-privacy:hover,
+.footer-privacy:focus {
+  color: #fbfbfb;
+}
+
 /* Планшетні стилі */
 @media screen and (min-width: 768px) {
-  /* ... */
+  .page-footer {
+    padding-top: 50px;
+  }
+
+  .footer-logo {
+    font-size: 20px;
+  }
+
+  .footer-nav-link {
+    min-width: 91px;
+    padding: 15px 24px;
+  }
+
+  .footer-social-list {
+    width: auto;
+  }
+
+  .footer-top {
+    margin-bottom: 96px;
+  }
+
+  .footer-text {
+    max-width: 640px;
+    margin: 0 auto 99px;
+
+    font-size: 32px;
+  }
+
+  .footer-bottom {
+    gap: 32px;
+  }
+
+  .footer-copyright,
+  .footer-privacy {
+    font-size: 14px;
+    line-height: 1.18;
+  }
 }
 
 /* Десктопні стилі */
 @media screen and (min-width: 1280px) {
-  .page-footer {
-    padding-top: 50px;
+  .footer-text {
+    max-width: 693px;
   }
 }

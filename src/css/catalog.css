@@ -4,11 +4,158 @@
   padding-bottom: 50px;
 }
 
+.catalog-title {
+  margin-bottom: 40px;
+
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+.catalog-list {
+  margin-bottom: 40px;
+}
+
+.catalog-card {
+  width: 100%;
+  padding: 16px 16px 32px;
+  border-radius: 24px;
+  background-color: #fbfbfb;
+}
+
+@media screen and (max-width: 767px) {
+  .catalog-card:nth-last-child(-n + 2) {
+    display: none;
+  }
+}
+
+.catalog-card-img {
+  border-radius: 24px;
+  margin-bottom: 32px;
+}
+
+.catalog-card-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid rgba(4, 3, 6, 0.1);
+}
+
+.catalog-card-title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.18;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #1b414b;
+}
+.catalog-card-type {
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #989899;
+}
+
+.catalog-card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.catalog-card-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 14px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: #040306;
+}
+.catalog-card-label {
+  text-transform: uppercase;
+  color: #989899;
+}
+
+.catalog-btn {
+  display: block;
+  min-width: 141px;
+  margin: 0 auto;
+  padding: 14px 32px;
+  border: 1px solid rgba(251, 251, 251, 0.35);
+  border-radius: 15px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  background-color: transparent;
+
+  transition-property: color, background-color, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
+}
+
+.catalog-btn:hover,
+.catalog-btn:focus {
+  color: #1b414b;
+  background-color: #fbfbfb;
+  border-color: transparent;
+}
+
 /* Планшетні стилі */
 @media screen and (min-width: 768px) {
   .catalog-section {
     padding-top: 120px;
     padding-bottom: 60px;
+  }
+
+  .catalog-title {
+    max-width: 645px;
+    margin: 0 auto;
+    margin-bottom: 75px;
+
+    font-size: 48px;
+  }
+
+  .catalog-list {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 50px;
+  }
+
+  .catalog-card {
+    width: calc((100% - 25px) / 2);
+  }
+
+  @media screen and (max-width: 1279px) {
+    .catalog-card:nth-last-child(-n + 1) {
+      display: none;
+    }
+  }
+
+  .catalog-card-title {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .catalog-card-type {
+    font-size: 13px;
+    line-height: 1.18;
+  }
+
+  .catalog-btn {
+    min-width: 179px;
+    padding: 16px 40px;
+
+    font-size: 18px;
+    line-height: 1.1;
   }
 }
 
@@ -17,5 +164,17 @@
   .catalog-section {
     padding-top: 150px;
     padding-bottom: 75px;
+  }
+
+  .catalog-title {
+    max-width: 713px;
+  }
+
+  .catalog-list {
+    gap: 25px;
+  }
+
+  .catalog-card {
+    width: calc((100% - 2 * 25px) / 3);
   }
 }
