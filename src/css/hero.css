@@ -4,16 +4,13 @@
   margin: 0 auto;
   padding-top: 260px;
   padding-bottom: 280px;
-  background-image: url(/img/hero/hero-desk.jpg);
+  background-image: image-set(
+    url(/img/hero/hero-desk.jpg) 1x,
+    url(/img/hero/hero-desk@2x.jpg) 2x
+  );
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-
-@media screen and (min-resolution: 2x) {
-  .hero-section {
-    background-image: url(/img/hero/hero-desk@2x.jpg);
-  }
 }
 
 .hero-title {
