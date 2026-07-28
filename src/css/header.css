@@ -34,11 +34,11 @@
 
 .burger-btn {
   background-color: transparent;
+  color: #1b414b;
 }
 
 .burger-icon {
   display: block;
-  stroke: #1b414b;
 }
 
 /* Mobile menu */
@@ -95,11 +95,11 @@
 
 .mobile-close-btn {
   background-color: transparent;
+  color: #1b414b;
 }
 
 .mobile-close-icon {
   display: block;
-  fill: #1b414b;
 }
 
 .mobile-nav-list {
@@ -148,7 +148,6 @@
 
 .mobile-social-icon {
   display: block;
-  fill: currentColor;
 }
 
 /* Планшетні стилі */
@@ -215,7 +214,6 @@
 
   .header-social-icon {
     display: block;
-    fill: currentColor;
   }
 
   .burger-btn,
