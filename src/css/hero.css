@@ -1,6 +1,6 @@
 /* Мобільні стилі */
 .hero-section {
-  max-width: 1280px;
+  max-width: 375px;
   margin: 0 auto;
   padding-top: 260px;
   padding-bottom: 280px;
@@ -26,9 +26,8 @@
 .hero-text {
   margin-bottom: 38px;
 
-  font-weight: 300;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   text-align: center;
   color: #b4b7ba;
 }
@@ -42,7 +41,7 @@
 
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.28571;
+  line-height: 1.29;
   letter-spacing: -0.02em;
   color: #fbfbfb;
   background-color: #1b414b;
@@ -61,6 +60,7 @@
 /* Планшетні стилі */
 @media screen and (min-width: 768px) {
   .hero-section {
+    max-width: 768px;
     padding-top: 220px;
     padding-bottom: 180px;
   }
@@ -71,7 +71,8 @@
 
   .hero-text {
     max-width: 597px;
-    margin: 0 auto 48px;
+    margin: 0 auto;
+    margin-bottom: 48px;
 
     font-size: 16px;
     line-height: 1.4;
@@ -89,15 +90,13 @@
 /* Десктопні стилі */
 @media screen and (min-width: 1280px) {
   .hero-section {
+    max-width: 1280px;
     padding-top: 250px;
     padding-bottom: 200px;
   }
 
   .hero-title {
-    max-width: 1001px;
-    margin-left: auto;
-    margin-right: auto;
-
+    margin: 0 auto 24px;
     font-size: 80px;
   }
 }

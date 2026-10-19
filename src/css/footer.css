@@ -10,9 +10,8 @@
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: start;
-  row-gap: 80px;
-  column-gap: 24px;
   margin-bottom: 40px;
+  row-gap: 80px;
 }
 
 .footer-logo {
@@ -53,9 +52,6 @@
 .footer-social-list {
   display: flex;
   gap: 8px;
-  width: 100%;
-  justify-content: center;
-
   align-items: center;
 }
 
@@ -106,10 +102,16 @@
   color: #fbfbfb;
 }
 
+@media screen and (max-width: 767px) {
+  .footer-social-list {
+    margin: 0 auto;
+  }
+}
+
 /* Планшетні стилі */
 @media screen and (min-width: 768px) {
-  .page-footer {
-    padding-top: 50px;
+  .footer-top {
+    margin-bottom: 96px;
   }
 
   .footer-logo {
@@ -119,14 +121,6 @@
   .footer-nav-link {
     min-width: 91px;
     padding: 15px 24px;
-  }
-
-  .footer-social-list {
-    width: auto;
-  }
-
-  .footer-top {
-    margin-bottom: 96px;
   }
 
   .footer-text {
@@ -149,6 +143,10 @@
 
 /* Десктопні стилі */
 @media screen and (min-width: 1280px) {
+  .page-footer {
+    padding-top: 50px;
+  }
+
   .footer-text {
     max-width: 693px;
   }
